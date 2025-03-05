@@ -1,7 +1,7 @@
 import React from "react";
 import { IconTypes } from "./types.d";
 
-const GoodleapLogo = ({ width = 126, height = 31 }: IconTypes) => {
+const GoodleapLogo = ({ width = 126, height = 29.91 }: IconTypes) => {
   return (
     <svg
       width={width}

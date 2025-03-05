@@ -1,7 +1,7 @@
 import React from "react";
 import { IconTypes } from "./types";
 
-const GoggleLogo = ({ width = 100, height = 34 }: IconTypes) => {
+const GoggleLogo = ({ width = 100, height = 32.7 }: IconTypes) => {
   return (
     <svg
       width={width}

@@ -12,39 +12,47 @@ import {
 } from "../../../../public/icons";
 import { Marquee } from "@/components/magicui/marquee";
 
-const companies = [
-  { name: "Zippo", component: <ZippoLogo /> },
-  { name: "Grammaly", component: <GrammalyLogo /> },
-  { name: "GoodLeap", component: <GoodLeapLogo /> },
-  { name: "Google", component: <GoggleLogo /> },
-  { name: "Loom", component: <LoomLogo /> },
-];
-const firstRow = companies.slice(0, companies.length / 2);
+// const companies = [
+//   { name: "Zippo", component: <ZippoLogo /> },
+//   { name: "Grammaly", component: <GrammalyLogo /> },
+//   { name: "GoodLeap", component: <GoodLeapLogo /> },
+//   { name: "Google", component: <GoggleLogo /> },
+//   { name: "Loom", component: <LoomLogo /> },
 
-export function MarqueeDemo() {
-  return (
-    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-      <div className="mb-4">
-        <p className="text-center text-sm text-muted-foreground">
-          Trusted partnership with 100+ companies
-        </p>
-      </div>
+// ];
+// const firstRow = companies.slice(0, companies.length / 2);
+// const secondRow = companies.slice(companies.length / 2);
 
-      <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((company) => (
-          <div key={company.name} className="mx-8 h-20 w-40">
-            {company.component}
-          </div>
-        ))}
-      </Marquee>
+// export function MarqueeDemo() {
+//   return (
+//     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+//       <div className="mb-4">
+//         <p className="text-center text-sm text-muted-foreground">
+//           Trusted partnership with 100+ companies
+//         </p>
+//       </div>
 
-     
+//       <Marquee pauseOnHover className="[--duration:20s]">
+//         {firstRow.map((company) => (
+//           <div key={company.name} className="mx-8 h-20 w-40">
+//             {company.component}
+//           </div>
+//         ))}
+//       </Marquee>
 
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
-    </div>
-  );
-}
+//       <Marquee reverse pauseOnHover className="[--duration:20s]">
+//         {secondRow.map((company) => (
+//           <div key={company.name} className="mx-8 h-20 w-40">
+//             {company.component}
+//           </div>
+//         ))}
+//       </Marquee>
+
+//       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+//       <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+//     </div>
+//   );
+// }
 const Hero = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-32 py-8 sm:py-12 lg:py-20 bg-[#F7F6F2]">
@@ -115,9 +123,15 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div>
-        <p>Trusted partnership with 100+ companys</p>
-        <MarqueeDemo />
+      <div className="flex items-center justify-center gap-16">
+        <p className="font-[16px]">Trusted partnership with 100+ companys</p>
+        <div className=" flex items-center justify-between gap-28">
+          <ZippoLogo />
+          <GrammalyLogo />
+          <GoodLeapLogo />
+          <GoggleLogo />
+          <LoomLogo />
+        </div>
       </div>
     </div>
   );
