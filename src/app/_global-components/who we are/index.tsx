@@ -27,7 +27,9 @@ const WhoWeAre = () => {
             <div className="mb-28">
               <RouteIcon />
             </div>
-            <h3 className=" font-medium text-white mb-7">Our Mission</h3>
+            <h3 className=" text-2xl font-medium text-white mb-7">
+              Our Mission
+            </h3>
             <p className="font-light text-white ">
               Our mission is to support startups by providing not only financial
               investment but also strategic guidance, mentorship, and access to
@@ -38,7 +40,9 @@ const WhoWeAre = () => {
             <div className="mb-28">
               <IdeaIcon />
             </div>
-            <h3 className=" font-medium text-white mb-7">Our Vision</h3>
+            <h3 className=" text-2xl font-medium text-white mb-7">
+              Our Vision
+            </h3>
             <p className="font-light text-white">
               To be the leading venture capital agency that fuels innovation and
               empowers entrepreneurs, creating a thriving ecosystem where
