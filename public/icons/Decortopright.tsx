@@ -17,7 +17,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 93.1338 80.0493)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0492"
@@ -25,7 +25,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 80.0492 80.0493)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
@@ -33,7 +33,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 66.9648 80.0493)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8802"
@@ -41,7 +41,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 53.8802 80.0493)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
@@ -49,7 +49,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 93.1338 66.9648)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0492"
@@ -57,7 +57,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 80.0492 66.9648)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
@@ -65,7 +65,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 66.9648 66.9648)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8802"
@@ -73,7 +73,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 53.8802 66.9648)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
@@ -81,7 +81,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 93.1338 53.8804)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0492"
@@ -89,7 +89,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 80.0492 53.8804)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
@@ -97,7 +97,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 66.9648 53.8804)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8802"
@@ -105,7 +105,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 53.8802 53.8804)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
@@ -113,7 +113,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 93.1338 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0492"
@@ -121,7 +121,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 80.0492 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
@@ -129,7 +129,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 66.9648 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8802"
@@ -137,7 +137,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 53.8802 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
@@ -145,7 +145,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 40.7958 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7112"
@@ -153,7 +153,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 27.7112 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
@@ -161,7 +161,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 14.6268 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54222"
@@ -169,7 +169,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 1.54222 40.7959)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
@@ -177,7 +177,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 93.1338 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0492"
@@ -185,7 +185,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 80.0492 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
@@ -193,7 +193,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 66.9648 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8802"
@@ -201,7 +201,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 53.8802 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
@@ -209,7 +209,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 40.7958 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7112"
@@ -217,7 +217,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 27.7112 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
@@ -225,7 +225,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 14.6268 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54222"
@@ -233,7 +233,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 1.54222 27.7112)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
@@ -241,7 +241,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 93.1338 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0492"
@@ -249,7 +249,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 80.0492 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
@@ -257,7 +257,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 66.9648 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8802"
@@ -265,7 +265,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 53.8802 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
@@ -273,7 +273,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 40.7958 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7112"
@@ -281,7 +281,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 27.7112 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
@@ -289,7 +289,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 14.6268 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54222"
@@ -297,7 +297,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 1.54222 14.6267)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
@@ -305,7 +305,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 93.1338 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0492"
@@ -313,7 +313,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 80.0492 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
@@ -321,7 +321,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 66.9648 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8802"
@@ -329,7 +329,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 53.8802 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
@@ -337,7 +337,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 40.7958 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7112"
@@ -345,7 +345,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 27.7112 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
@@ -353,7 +353,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 14.6268 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54222"
@@ -361,7 +361,7 @@ const DecorTopRight
         r="1.54225"
         transform="rotate(180 1.54222 1.54222)"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
     </svg>
   );

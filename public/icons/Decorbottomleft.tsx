@@ -15,308 +15,308 @@ const DecorBottomLeft = ({ width = 95, height = 82 }: IconTypes) => {
         cy="1.54225"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
         cy="1.54225"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7113"
         cy="1.54225"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
         cy="1.54225"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54225"
         cy="14.6267"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
         cy="14.6267"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7113"
         cy="14.6267"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
         cy="14.6267"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54225"
         cy="27.7112"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
         cy="27.7112"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7113"
         cy="27.7112"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
         cy="27.7112"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54225"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7113"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8803"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0493"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
         cy="40.7957"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54225"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7113"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8803"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0493"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
         cy="53.8804"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54225"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7113"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8803"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0493"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
         cy="66.9649"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="1.54225"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="14.6268"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="27.7113"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="40.7958"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="53.8803"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="66.9648"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="80.0493"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
       <circle
         cx="93.1338"
         cy="80.0493"
         r="1.54225"
         fill="white"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
       />
     </svg>
   );

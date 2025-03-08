@@ -12,10 +12,18 @@ const Nav = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const handleLinkClick = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setMobileMenuOpen(false); // Close mobile menu after clicking a link
+  };
+
   return (
     <div className="w-full">
       <nav className="w-full px-4 md:px-20 py-4 flex flex-wrap justify-between items-center bg-white relative">
-        <div className="flex items-center justify-between space-x-2 w-lg">
+        <div className="flex items-center justify-between w-full md:w-auto">
           <div className="px-3 py-1 rounded">
             <Image
               src="/images/logo.webp"
@@ -25,37 +33,50 @@ const Nav = () => {
               className="object-contain"
             />
           </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <div className="flex items-center text-[16px] space-x-6">
-              {["Service", "About Us", "Benefits", "FAQ?"].map((item) => (
-                <Link
-                  key={item}
-                  href={`/`}
-                  className="text-[#1F253F] text-[14px] font-medium hover:text-gray-900 transition-colors"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
+          <button
+            className="md:hidden p-2 hover:bg-gray-100 rounded-lg"
+            onClick={toggleMobileMenu}
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        <div className="hidden md:flex items-center space-x-8">
+          <div className="flex items-center text-[16px] space-x-6">
+            {[
+              { label: "Service", id: "service" },
+              { label: "About Us", id: "about-us" },
+              { label: "Benefits", id: "benefits" },
+              { label: "FAQ?", id: "faq" },
+            ].map((item) => (
+              <Link
+                key={item.id}
+                href={`#${item.id}`}
+                className="text-[#1F253F] text-[14px] font-medium hover:text-gray-900 transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleLinkClick(item.id);
+                }}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         </div>
 
-        <button
-          className="md:hidden p-2 hover:bg-gray-100 rounded-lg"
-          onClick={toggleMobileMenu}
-          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
-        <div className="flex items-center justify-between gap-4">
+        <div className="hidden md:flex items-center justify-between gap-4">
           <Link
-            href={`/`}
+            href="#strategy-call"
             className="text-[#1F253F] text-[14px] font-medium hover:text-gray-900 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              handleLinkClick("strategy-call");
+            }}
           >
             Book a Strategy Call
           </Link>
-          <Button className="hidden md:flex bg-[#1F253F] rounded-[12px] text-white text-[12px] px-6">
+          <Button className="bg-[#1F253F] rounded-[12px] text-white text-[12px] px-6">
             Partner with us
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,18 +99,26 @@ const Nav = () => {
         {mobileMenuOpen && (
           <div className="md:hidden w-full mt-4 bg-white border-t">
             <div className="flex flex-col space-y-4 py-4">
-              {["Service", "About Us", "Benefits", "FAQ?"].map((item) => (
+              {[
+                { label: "Service", id: "service" },
+                { label: "About Us", id: "about-us" },
+                { label: "Benefits", id: "benefits" },
+                { label: "FAQ?", id: "faq" },
+              ].map((item) => (
                 <Link
-                  key={item}
-                  href={`/`}
+                  key={item.id}
+                  href={`#${item.id}`}
                   className="text-gray-600 hover:text-gray-900 transition-colors px-4 py-2 hover:bg-gray-50"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleLinkClick(item.id);
+                  }}
                 >
-                  {item}
+                  {item.label}
                 </Link>
               ))}
               <div className="px-4">
-                <Button className="bg-teal-700 hover:bg-teal-800 text-white w-auto">
+                <Button className="bg-teal-700 hover:bg-teal-800 text-white w-full">
                   Join Waitlist
                 </Button>
               </div>

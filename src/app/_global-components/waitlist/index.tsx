@@ -8,45 +8,45 @@ import {
 
 const WaitlistBanner = () => {
   return (
-    <div className="relative  w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 overflow-hidden bg-white">
-      <div className="relative bg-[#1F253F] rounded-4xl px-4 sm:px-6 md:px-8 py-10 sm:py-12 md:py-16 text-center overflow-hidden">
+    <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-16 overflow-hidden bg-white">
+      <div className="relative bg-[#1F253F] rounded-2xl sm:rounded-4xl px-6 sm:px-8 py-8 sm:py-12 md:py-16 text-center overflow-hidden">
         {/* Top Right SVG */}
-        <div className="absolute  top-5 right-10">
-          <DecorTopRight />
+        <div className="absolute top-2 right-2 sm:top-5 sm:right-10">
+          <DecorTopRight className="w-8 h-8 sm:w-12 sm:h-12" />
         </div>
 
         {/* Bottom Right SVG */}
-        <div className="absolute bottom-5 right-10">
-          <DecorBottomRight />
+        <div className="absolute bottom-2 right-2 sm:bottom-5 sm:right-10">
+          <DecorBottomRight className="w-8 h-8 sm:w-12 sm:h-12" />
         </div>
 
         {/* Top Left SVG */}
-        <div className="absolute top-5 left-10">
-          <DecorTopLeft />
+        <div className="absolute top-2 left-2 sm:top-5 sm:left-10">
+          <DecorTopLeft className="w-8 h-8 sm:w-12 sm:h-12" />
         </div>
 
         {/* Bottom Left SVG */}
-        <div className="absolute bottom-5 left-10">
-          <DecorBottomLeft />
+        <div className="absolute bottom-2 left-2 sm:bottom-5 sm:left-10">
+          <DecorBottomLeft className="w-8 h-8 sm:w-12 sm:h-12" />
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-lg mx-auto">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2 sm:mb-4">
+        <div className="relative z-10 max-w-lg mx-auto px-2 sm:px-0">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2 sm:mb-4">
             Let's Partner for Your
           </h2>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
             Startup Success!
           </h2>
-          <p className="text-[#6B7280] text-sm sm:text-base mb-6 sm:mb-8">
+          <p className="text-[#6B7280] text-xs sm:text-sm mb-4 sm:mb-6">
             Join us in transforming your startup vision into reality!
           </p>
 
           <button
-            className="bg-[#EAE68B] text-[#1F253F] px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg font-medium 
+            className="bg-[#EAE68B] text-[#1F253F] px-4 sm:px-3 py-2 sm:py-3 rounded-lg font-medium 
             hover:bg-teal-50 transition-all duration-200 
             inline-flex items-center justify-center group
-            text-sm sm:text-base
+            text-xs sm:text-sm
             shadow-sm hover:shadow-md
             w-full sm:w-auto"
           >
@@ -64,7 +64,6 @@ const WaitlistBanner = () => {
                 fill="#1F253F"
               />
             </svg>
-           
           </button>
         </div>
       </div>
