@@ -64,12 +64,12 @@ const Hero = () => {
             </TextAnimate>
           </h1>
 
-          <p className="text-[#6B7280] text-[14px] sm:text-lg font-[400]">
+          <h1 className="text-[#6B7280] text-[14px] sm:text-lg font-[400]">
             <TextAnimate animation="fadeIn" by="line" as="p">
               Empowering visionary entrepreneurs with the capital and support
               needed to transform innovative ideas into successful businesses.
             </TextAnimate>
-          </p>
+          </h1>
 
           <div className="flex flex-row gap-6 space-y-4 sm:space-y-5 pt-2">
             <Button className="bg-[#1F253F]  text-white px-6 sm:px-8 py-5 sm:py-6 rounded-md text-sm sm:text-base w-fit transition-colors duration-200">
@@ -84,13 +84,13 @@ const Hero = () => {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className="lucide lucide-arrow-up-right"
+                className="lucide lucide-arrow-up-right transform group-hover:translate-x-1 transition-transform duration-200"
               >
                 <path d="M7 7h10v10" />
                 <path d="M7 17 17 7" />
               </svg>
             </Button>
-            <Button className="bg-[#EAE68B]  text-[#1F253F] px-6 sm:px-8 py-5 sm:py-6 rounded-md text-sm sm:text-base w-fit ">
+            <Button className="bg-[#EAE68B]  text-[#1F253F] px-6 sm:px-8 py-5 sm:py-6 rounded-md text-sm sm:text-base w-fit  transition-colors duration-200">
               Book a Strategy Call
               <svg
                 xmlns="http://www.w3.org/2000/svg"

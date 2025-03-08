@@ -9,3 +9,7 @@ export { default as SeedFundingIcon } from "./funding";
 export { default as MentorshipIcon } from "./mentorship";
 export { default as InvestmentIcon } from "./investment";
 export { default as PartnershipIcon } from "./partnership";
+export { default as DecorTopRight } from "./Decortopright";
+export { default as DecorBottomRight } from "./Decorbottomright";
+export { default as DecorTopLeft } from "./Decortopleft";
+export { default as DecorBottomLeft } from "./Decorbottomleft";

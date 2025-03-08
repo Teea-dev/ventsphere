@@ -30,14 +30,13 @@ export function AccordionDemo() {
               support startups like yours.
             </p>
             <p className="text-[#6B7280]">
-              For more inquiries, reach us at 
-              
-              contact@ventsphere.com.
+              For more inquiries, reach us at
+              <p className="text-[#1F253F] font-medium">contact@ventsphere.com.</p>
             </p>
           </div>
         </div>
       </div>
-      <Accordion type="single" collapsible className="w-full ">
+      <Accordion type="single" collapsible className="w-full  ">
         <AccordionItem value="item-1">
           <AccordionTrigger>
             What types of startups do you work with?
