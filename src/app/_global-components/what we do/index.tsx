@@ -23,7 +23,7 @@ const WhatWeDo = () => {
         <div className="mt-4 sm:mt-6 flex flex-col gap-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl  font-medium text-[#1F253F] text-nowrap leading-tight text-center max-w-4xl">
             <TextAnimate animation="slideUp" by="word">
-              Financial Backing You  Need to Succeed
+              Financial Backing You Need to Succeed
             </TextAnimate>
           </h2>
           <p className="text-[#6B7280] text-center  font-light text-[16px]">
