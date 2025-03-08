@@ -7,6 +7,7 @@ import Benefit from "./_global-components/benefit";
 import Testimonial from "./_global-components/testimonial";
 import { AccordionDemo } from "./_global-components/faq";
 import WaitlistBanner from "./_global-components/waitlist";
+import Footer from "./_global-components/footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Testimonial />
       <AccordionDemo />
       <WaitlistBanner />
+      <Footer />
     </div>
   );
 }

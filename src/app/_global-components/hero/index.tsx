@@ -72,7 +72,7 @@ const Hero = () => {
           </h1>
 
           <div className="flex flex-row gap-6 space-y-4 sm:space-y-5 pt-2">
-            <Button className="bg-[#1F253F]  text-white px-6 sm:px-8 py-5 sm:py-6 rounded-md text-sm sm:text-base w-fit transition-colors duration-200">
+            <Button className="bg-[#1F253F]  text-white px-6 sm:px-8 py-5 sm:py-6 rounded-2xl text-sm sm:text-base w-fit transition-colors duration-200">
               Partner with Us
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ const Hero = () => {
                 <path d="M7 17 17 7" />
               </svg>
             </Button>
-            <Button className="bg-[#EAE68B]  text-[#1F253F] px-6 sm:px-8 py-5 sm:py-6 rounded-md text-sm sm:text-base w-fit  transition-colors duration-200">
+            <Button className="bg-[#EAE68B]  text-[#1F253F] px-6 sm:px-8 py-5 sm:py-6 rounded-2xl text-sm sm:text-base w-fit  transition-colors duration-200">
               Book a Strategy Call
               <svg
                 xmlns="http://www.w3.org/2000/svg"
