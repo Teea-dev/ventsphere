@@ -55,8 +55,23 @@ const Nav = () => {
           >
             Book a Strategy Call
           </Link>
-          <Button className="hidden md:flex bg-[#1F253F]  text-white text-[12px] px-6">
+          <Button className="hidden md:flex bg-[#1F253F] rounded-[12px] text-white text-[12px] px-6">
             Partner with us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-arrow-up-right transform group-hover:translate-x-1 transition-transform duration-200"
+            >
+              <path d="M7 7h10v10" />
+              <path d="M7 17 17 7" />
+            </svg>
           </Button>
         </div>
 

@@ -13,3 +13,7 @@ export { default as DecorTopRight } from "./Decortopright";
 export { default as DecorBottomRight } from "./Decorbottomright";
 export { default as DecorTopLeft } from "./Decortopleft";
 export { default as DecorBottomLeft } from "./Decorbottomleft";
+export { default as InstagramIcon } from "./insta";
+export { default as LinkedinIcon } from "./linkedin";
+export { default as DiscordIcon } from "./discord";
+export { default as FacebookIcon } from "./facebook";

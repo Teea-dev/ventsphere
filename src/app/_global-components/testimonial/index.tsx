@@ -22,24 +22,28 @@ const Testimonial = () => {
       title: "Seed Funding",
       description:
         "We provide initial capital to early-stage startups, helping them turn innovative ideas into viable businesses.",
+      background: "url('/public/images/backgroundImg.png')", // Add your image path here
     },
     {
       icon: <InvestmentIcon />,
       title: "Post-Investment Support",
       description:
         "We provide flexible funding options designed to match the unique needs of your startup, helping you grow at every stage.",
+      background: "url('/path/to/investment-support-bg.jpg')", // Add your image path here
     },
     {
       icon: <MentorshipIcon />,
       title: "Mentorship and Coaching",
       description:
         "We provide flexible funding options designed to match the unique needs of your startup, helping you grow at every stage.",
+      background: "url('/path/to/mentorship-bg.jpg')", // Add your image path here
     },
     {
       icon: <PartnershipIcon />,
       title: "Strategic Partnerships",
       description:
         "Access our extensive network to forge partnerships that can open doors and drive meaningful growth for your business.",
+      background: "url('/path/to/partnerships-bg.jpg')", // Add your image path here
     },
   ];
 
@@ -85,7 +89,14 @@ const Testimonial = () => {
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
-                <div className="bg-[#FFFFFF] rounded-2xl flex p-10 justify-between gap-3">
+                <div
+                  className="rounded-2xl flex p-10 justify-between gap-3"
+                  style={{
+                    backgroundImage: testimonial.background,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                >
                   <div>{testimonial.icon}</div>
                   <div>
                     <h3 className="text-2xl font-medium text-[#1D3D3A] mb-7">

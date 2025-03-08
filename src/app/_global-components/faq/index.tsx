@@ -10,7 +10,7 @@ import { TextAnimate } from "@/components/magicui/text-animate";
 
 export function AccordionDemo() {
   return (
-    <div className="w-full px-4 sm:px-6 flex justify-between items-start gap-20 lg:px-8 xl:px-32 py-8 sm:py-12 lg:py-40 bg-[#F7F6F2]">
+    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-32 py-8 sm:py-12 lg:py-40  flex justify-between items-start gap-20  bg-[#F7F6F2]">
       <div>
         <div className="flex  w-fit rounded-lg px-2.5 sm:px-3 py-1.5 sm:py-2 gap-1.5 sm:gap-2">
           <p className="text-[#B1AD4E] text-xs sm:text-sm font-medium">
@@ -31,12 +31,14 @@ export function AccordionDemo() {
             </p>
             <p className="text-[#6B7280]">
               For more inquiries, reach us at
-              <p className="text-[#1F253F] font-medium">contact@ventsphere.com.</p>
+              <p className="text-[#1F253F] font-medium">
+                contact@ventsphere.com
+              </p>
             </p>
           </div>
         </div>
       </div>
-      <Accordion type="single" collapsible className="w-full  ">
+      <Accordion type="single" collapsible className="w-full max-w-fit  ">
         <AccordionItem value="item-1">
           <AccordionTrigger>
             What types of startups do you work with?

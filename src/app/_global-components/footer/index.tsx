@@ -2,6 +2,12 @@ import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone } from "lucide-react";
+import {
+  DiscordIcon,
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+} from "../../../../public/icons";
 
 const Footer = () => {
   return (
@@ -20,6 +26,12 @@ const Footer = () => {
               Empowering visionary startups to reach new heights through funding
               and support.
             </p>
+            <div className="flex items-center justify-between max-w-[145px]">
+              <LinkedinIcon />
+              <DiscordIcon />
+              <FacebookIcon />
+              <InstagramIcon />
+            </div>
           </div>
 
           <div className="w-full lg:w-[60%] grid grid-cols-2 md:grid-cols-3 gap-8 sm:gap-6">
@@ -90,7 +102,7 @@ const Footer = () => {
           <h3 className="text-[#6B7280] text-sm sm:text-base font-normal text-center sm:text-left">
             © 2024 Ventsphere Inc. All rights reserved.
           </h3>
-          <div className="flex items-center flex-row-reverse gap-2.5 sm:gap-10 text-[#6B7280] text-sm sm:text-base font-normal">
+          <div className="flex items-center flex-row-reverse gap-1 sm:gap-10 text-[#6B7280] text-sm sm:text-base font-normal">
             <Link
               href="/privacy"
               className="hover:text-gray-900 transition-colors"
