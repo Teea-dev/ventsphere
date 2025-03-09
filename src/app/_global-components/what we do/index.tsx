@@ -8,6 +8,7 @@ import {
   SeedFundingIcon,
 } from "../../../../public/icons";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const WhatWeDo = () => {
   return (
@@ -100,22 +101,27 @@ const WhatWeDo = () => {
         </div>
         <div className="flex flex-row gap-6 mt-16 sm:mt-20 lg:mt-32 space-y-4 sm:space-y-5 pt-2">
           <Button className="bg-[#1F253F] text-white px-6 sm:px-8 py-5 sm:py-6 rounded-md text-sm sm:text-base w-fit transition-colors duration-200">
-            Partner with Us
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-arrow-up-right"
+            <Link
+              href="/partner"
+              className="flex items-center gap-2 justify-between space-x-2"
             >
-              <path d="M7 7h10v10" />
-              <path d="M7 17 17 7" />
-            </svg>
+              Partner with Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-arrow-up-right"
+              >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </Link>
           </Button>
         </div>
       </div>

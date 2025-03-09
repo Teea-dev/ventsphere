@@ -21,13 +21,15 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto mb-8 sm:mb-12 md:mb-20">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           <div className="w-fit lg:w-[40%] flex flex-col gap-6 md:gap-10">
-            <Image
-              src="/images/logo.webp"
-              alt="Ventsphere logo"
-              width={100}
-              height={30}
-              className="object-contain"
-            />
+            <Link href="/">
+              <Image
+                src="/images/logo.webp"
+                alt="Ventsphere logo"
+                width={100}
+                height={30}
+                className="object-contain"
+              />
+            </Link>
             <p className="text-[#6B7280] text-sm sm:text-base font-normal">
               Empowering visionary startups to reach new heights through funding
               and support.

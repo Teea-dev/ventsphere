@@ -9,12 +9,14 @@ import {
   GrammalyLogo,
   LoomLogo,
   ZippoLogo,
+  DecorBottomLeft,
+  DecorTopRight,
 } from "../../../../public/icons";
 
 const Hero = () => {
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-32 py-8 sm:py-12 lg:py-20 bg-[#F7F6F2]">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12">
+    <div className="w-full  px-4 sm:px-6 lg:px-4 xl:px-32 py-8 sm:py-12 lg:py-20 bg-[#F7F6F2]">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-20">
         <div className="flex flex-col space-y-4 sm:space-y-6 w-full lg:w-[55%] max-w-xl">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium text-[#1F253F] leading-tight">
             <TextAnimate animation="slideUp" by="word">
@@ -69,23 +71,23 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full sm:w-4/5 lg:w-[45%] mt-8 lg:mt-0">
-          <div className="relative w-full aspect-square sm:aspect-[4/3] lg:aspect-square">
-            <Image
-              src="/images/heroImg.webp"
-              alt="hero image"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+        <div className="relative  h-auto ">
+          <Image
+            src="/images/heroImg.webp"
+            alt="hero image"
+            layout="intrinsic"
+            width={477}
+            height={525}
+            className="object-contain"
+            priority
+          />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 sm:gap-8 mt-8 sm:mt-12">
-        <p className="text-[16px] text-center">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 sm:mt-12">
+        <p className="text-[16px] text-[#6B7280] text-wrap text-center sm:text-start">
           Trusted partnership with 100+ companies
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8">
+        <div className="flex  items-center justify-center gap-4 sm:gap-8">
           <ZippoLogo />
           <GrammalyLogo />
           <GoodLeapLogo />
