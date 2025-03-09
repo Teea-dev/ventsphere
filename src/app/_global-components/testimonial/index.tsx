@@ -13,7 +13,6 @@ import {
   PartnershipIcon,
   SeedFundingIcon,
 } from "../../../../public/icons";
-import { Button } from "@/components/ui/button";
 
 const Testimonial = () => {
   const testimonials = [

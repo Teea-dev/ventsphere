@@ -69,7 +69,7 @@ const Benefit = () => {
             We bring extensive industry experience and insights. Our team is
             dedicated to providing you with tailored advice and mentorship,
             ensuring you navigate challenges effectively and capitalize on
-            opportunities to drive your startup's success.
+            opportunities to drive your startups success.
           </p>
           <div className="flex flex-row gap-6 space-y-4 sm:space-y-5 pt-2">
             <Button className="bg-[#1F253F] text-white px-6 sm:px-8 py-5 sm:py-6 rounded-md text-sm sm:text-base w-fit transition-colors duration-200">

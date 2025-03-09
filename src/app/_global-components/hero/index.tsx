@@ -9,8 +9,7 @@ import {
   GrammalyLogo,
   LoomLogo,
   ZippoLogo,
-  DecorBottomLeft,
-  DecorTopRight,
+ 
 } from "../../../../public/icons";
 
 const Hero = () => {

@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+
 import { TextAnimate } from "@/components/magicui/text-animate";
 import PartnerForm from "@/app/_global-components/form";
 
