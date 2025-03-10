@@ -13,6 +13,8 @@ import {
   PartnershipIcon,
   SeedFundingIcon,
 } from "../../../../public/icons";
+import { cn } from "@/lib/utils";
+import { Marquee } from "@/components/magicui/marquee";
 
 const Testimonial = () => {
   const testimonials = [
@@ -46,6 +48,43 @@ const Testimonial = () => {
     },
   ];
 
+  const firstRow = testimonials.slice(0, testimonials.length);
+  const secondRow = testimonials.slice(testimonials.length / 2);
+  const ReviewCard = ({
+    img,
+    title,
+    description,
+  }: {
+    img: string;
+    title: string;
+    description: string;
+  }) => {
+    return (
+      <div
+        className={cn(
+          "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+          // light styles
+          "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+          // dark styles
+          "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        )}
+      >
+        <div className="flex flex-row items-center gap-2">
+          <img
+            className="rounded-full"
+            width="32"
+            height="32"
+            alt=""
+            src={img}
+          />
+          <div className="flex flex-col">
+            <div className="text-sm font-medium dark:text-white">{title}</div>
+          </div>
+        </div>
+        <div className="mt-2 text-sm">{description}</div>
+      </div>
+    );
+  };
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-32 py-8 sm:py-12 lg:py-40 bg-[#F7F6F2]">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
@@ -63,7 +102,23 @@ const Testimonial = () => {
           </h2>
         </div>
 
-        <div className="w-full mt-6 sm:mt-10">
+        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+          <Marquee   className="[--duration:10s]  ">
+            {firstRow.map((testimonials) => (
+              <ReviewCard img={""} key={testimonials.title} {...testimonials} />
+            ))}
+          </Marquee>
+        </div>
+
+        {/* <Marquee reverse pauseOnHover className="[--duration:20s]">
+            {secondRow.map((review) => (
+              <ReviewCard img="" key={review.title} {...review} />
+            ))}
+          </Marquee> */}
+        {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div> */}
+        {/* </div> */}
+        {/* <div className="w-full mt-6 sm:mt-10">
           <Swiper
             spaceBetween={30}
             slidesPerView={1}
@@ -109,7 +164,7 @@ const Testimonial = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
+        </div> */}
       </div>
     </div>
   );
