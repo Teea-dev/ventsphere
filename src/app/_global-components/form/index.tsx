@@ -138,7 +138,10 @@ const PartnerForm = () => {
         />
 
         {/* Submit Button */}
-        <Button className="w-full bg-[#1F253F] cursor-pointer" type="submit">
+        <Button
+          className="w-full bg-[#1F253F] text-white cursor-pointer"
+          type="submit"
+        >
           Submit
         </Button>
       </form>

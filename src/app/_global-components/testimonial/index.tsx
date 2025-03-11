@@ -8,85 +8,159 @@ import "swiper/css/navigation";
 
 import { TextAnimate } from "@/components/magicui/text-animate";
 import {
+  Decor,
+  ExclamationIcon,
   InvestmentIcon,
   MentorshipIcon,
   PartnershipIcon,
   SeedFundingIcon,
 } from "../../../../public/icons";
 import { cn } from "@/lib/utils";
-import { Marquee } from "@/components/magicui/marquee";
+import Image from "next/image";
 
 const Testimonial = () => {
   const testimonials = [
     {
-      icon: <SeedFundingIcon />,
-      title: "Seed Funding",
+      type: "founder",
+      icon: <ExclamationIcon />,
+      title: "WORD FROM FOUNDER",
       description:
-        "We provide initial capital to early-stage startups, helping them turn innovative ideas into viable businesses.",
-      background: "url('/public/images/backgroundImg.png')", // Add your image path here
+        "We're committed to empowering startups with the funding and guidance they need to succeed.",
+      footer: "— Augustine Ifenna",
+      background: "/images/backgroundImg.webp",
+      backgroundColor: null,
     },
     {
+      type: "client",
       icon: <InvestmentIcon />,
-      title: "Post-Investment Support",
+      title: "CLIENT TESTIMONIAL",
       description:
-        "We provide flexible funding options designed to match the unique needs of your startup, helping you grow at every stage.",
-      background: "url('/path/to/investment-support-bg.jpg')", // Add your image path here
+        "Ventsphere's support has been pivotal, providing both the resources and expertise needed to scale our business.",
+      footerImage: "/images/client1.webp",
+      footerName: "Henry Orton",
+      footerPosition: "CEO of Danganox",
+      backgroundColor: "#1F253F",
     },
     {
+      type: "client",
       icon: <MentorshipIcon />,
-      title: "Mentorship and Coaching",
+      title: "CLIENT TESTIMONIAL",
       description:
-        "We provide flexible funding options designed to match the unique needs of your startup, helping you grow at every stage.",
-      background: "url('/path/to/mentorship-bg.jpg')", // Add your image path here
+        "Working with Ventsphere gave us the confidence and tools to navigate our industry and achieve our goals.",
+      footerImage: "/images/client2.webp",
+      footerName: "Michael Johnson",
+      footerPosition: "CEO of Jobber",
+      backgroundColor: "#1D3D3A",
     },
     {
+      type: "client",
       icon: <PartnershipIcon />,
-      title: "Strategic Partnerships",
+      title: "CLIENT TESTIMONIAL",
       description:
-        "Access our extensive network to forge partnerships that can open doors and drive meaningful growth for your business.",
-      background: "url('/path/to/partnerships-bg.jpg')", // Add your image path here
+        "The strategic partnerships Ventsphere facilitated opened doors we couldn't have accessed on our own. Game-changing for our growth.",
+      footerImage: "/images/client3.webp",
+      footerName: "Sarah Williams",
+      footerPosition: "CTO, FutureSolutions",
+      backgroundColor: "#B1AD4E",
     },
   ];
 
-  const firstRow = testimonials.slice(0, testimonials.length);
-  const secondRow = testimonials.slice(testimonials.length / 2);
-  const ReviewCard = ({
-    img,
-    title,
-    description,
-  }: {
-    img: string;
-    title: string;
-    description: string;
-  }) => {
-    return (
-      <div
-        className={cn(
-          "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-          // light styles
-          "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-          // dark styles
-          "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-        )}
-      >
-        <div className="flex flex-row items-center gap-2">
-          <img
-            className="rounded-full"
-            width="32"
-            height="32"
-            alt=""
-            src={img}
-          />
-          <div className="flex flex-col">
-            <div className="text-sm font-medium dark:text-white">{title}</div>
+  const renderTestimonialCard = (
+    testimonial:
+      | {
+          type: string;
+          icon: React.JSX.Element;
+          title: string;
+          description: string;
+          footer: string;
+          background: string;
+          backgroundColor: null;
+          footerImage?: undefined;
+          footerName?: undefined;
+          footerPosition?: undefined;
+        }
+      | {
+          type: string;
+          icon: React.JSX.Element;
+          title: string;
+          description: string;
+          footerImage: string;
+          footerName: string;
+          footerPosition: string;
+          backgroundColor: string;
+          footer?: undefined;
+          background?: undefined;
+        },
+    index: number
+  ) => {
+    if (testimonial.type === "founder") {
+      return (
+        <div
+          className="rounded-2xl flex flex-col p-6 sm:p-8 lg:p-10 justify-between gap-3 h-[350px] sm:h-[450px] lg:h-[541px]"
+          style={{
+            backgroundImage: `url(${testimonial.background})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="sm:transform sm:scale-100 scale-75 origin-left">
+            {testimonial.icon}
+          </div>
+          <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4">
+            <h3 className="text-[12px] sm:text-[14px] font-medium text-[#FFFFFF80] mb-2 sm:mb-4 lg:mb-7">
+              {testimonial.title}
+            </h3>
+            <p className="font-medium text-lg sm:text-xl lg:text-2xl text-[#FFFFFF]">
+              {testimonial.description}
+            </p>
+            <p className="font-medium text-[12px] sm:text-[14px] text-[#FFFFFF] mt-2">
+              {testimonial.footer}
+            </p>
           </div>
         </div>
-        <div className="mt-2 text-sm">{description}</div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div
+          className="rounded-2xl flex flex-col p-6 sm:p-8 lg:p-10 justify-between gap-3 h-[350px] sm:h-[450px] lg:h-[541px] relative overflow-hidden"
+          style={{
+            backgroundColor: testimonial.backgroundColor || undefined,
+          }}
+        >
+          <Decor  />
+
+          <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 relative z-10">
+            <p className="font-medium text-lg sm:text-xl lg:text-2xl text-[#FFFFFF]">
+              {testimonial.description}
+            </p>
+
+            <div className="flex items-center gap-2 sm:gap-3 mt-2 sm:mt-4">
+              {testimonial.footerImage && (
+                <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 overflow-hidden">
+                  <img
+                    src={testimonial.footerImage}
+                    alt={testimonial.footerName}
+                    className="object-cover "
+                  />
+                </div>
+              )}
+              <div>
+                <p className="font-medium text-[12px] sm:text-[14px] text-[#FFFFFF]">
+                  {testimonial.footerName}
+                </p>
+                <p className="text-[10px] sm:text-[12px] text-[#FFFFFF80]">
+                  {testimonial.footerPosition}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
   };
+
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-32 py-8 sm:py-12 lg:py-40 bg-[#F7F6F2]">
+    <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-32 py-8 sm:py-12 lg:py-24 xl:py-40 bg-[#F7F6F2]">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <div className="flex items-center w-fit rounded-lg px-2.5 sm:px-3 py-1.5 sm:py-2 gap-1.5 sm:gap-2">
           <p className="text-[#B1AD4E] text-xs sm:text-sm font-medium">
@@ -94,77 +168,47 @@ const Testimonial = () => {
           </p>
         </div>
 
-        <div className="mt-4 sm:mt-6 flex flex-col gap-8">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1F253F] text-wrap leading-tight text-center max-w-4xl">
+        <div className="mt-4 sm:mt-6 flex flex-col gap-4 sm:gap-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-[#1F253F] text-wrap leading-tight text-center max-w-4xl">
             <TextAnimate animation="slideUp" by="word">
               Success Stories from Visionary Founders
             </TextAnimate>
           </h2>
         </div>
 
-        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
-          <Marquee   className="[--duration:10s]  ">
-            {firstRow.map((testimonials) => (
-              <ReviewCard img={""} key={testimonials.title} {...testimonials} />
-            ))}
-          </Marquee>
-        </div>
-
-        {/* <Marquee reverse pauseOnHover className="[--duration:20s]">
-            {secondRow.map((review) => (
-              <ReviewCard img="" key={review.title} {...review} />
-            ))}
-          </Marquee> */}
-        {/* <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div> */}
-        {/* </div> */}
-        {/* <div className="w-full mt-6 sm:mt-10">
+        <div className="w-full mt-4 sm:mt-6 lg:mt-10">
           <Swiper
-            spaceBetween={30}
+            spaceBetween={20}
             slidesPerView={1}
             loop={true}
             autoplay={{
-              delay: 2000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[Autoplay]}
             breakpoints={{
-              640: {
+              540: {
                 slidesPerView: 1,
+                spaceBetween: 20,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 1.5,
+                spaceBetween: 20,
               },
               1024: {
                 slidesPerView: 2,
+                spaceBetween: 30,
               },
             }}
-            className="mySwiper"
+            className="mySwiper relative pb-12"
           >
             {testimonials.map((testimonial, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="rounded-2xl flex p-10 justify-between gap-3"
-                  style={{
-                    backgroundImage: testimonial.background,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                >
-                  <div>{testimonial.icon}</div>
-                  <div>
-                    <h3 className="text-2xl font-medium text-[#1D3D3A] mb-7">
-                      {testimonial.title}
-                    </h3>
-                    <p className="font-light text-[#6B7280]">
-                      {testimonial.description}
-                    </p>
-                  </div>
-                </div>
+              <SwiperSlide key={index} className="px-1 py-2">
+                {renderTestimonialCard(testimonial, index)}
               </SwiperSlide>
             ))}
           </Swiper>
-        </div> */}
+        </div>
       </div>
     </div>
   );
