@@ -127,7 +127,7 @@ const Testimonial = () => {
             backgroundColor: testimonial.backgroundColor || undefined,
           }}
         >
-          <Decor  />
+          <Decor />
 
           <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 relative z-10">
             <p className="font-medium text-lg sm:text-xl lg:text-2xl text-[#FFFFFF]">

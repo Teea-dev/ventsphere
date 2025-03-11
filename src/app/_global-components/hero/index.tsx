@@ -9,7 +9,6 @@ import {
   GrammalyLogo,
   LoomLogo,
   ZippoLogo,
- 
 } from "../../../../public/icons";
 
 const Hero = () => {
@@ -86,7 +85,7 @@ const Hero = () => {
         <p className="text-[16px] text-[#6B7280] text-wrap text-center sm:text-start">
           Trusted partnership with 100+ companies
         </p>
-        <div className="flex  items-center justify-center gap-4 sm:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 place-items-center gap-4 sm:gap-8">
           <ZippoLogo />
           <GrammalyLogo />
           <GoodLeapLogo />
