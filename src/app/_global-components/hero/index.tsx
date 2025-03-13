@@ -82,7 +82,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-8 sm:mt-12">
-        <p className="text-[16px] text-[#6B7280] text-wrap text-center sm:text-start">
+        <p className="text-[16px] text-[#6B7280] w-[176px] flex-wrap text-center sm:text-start">
           Trusted partnership with 100+ companies
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 place-items-center gap-4 sm:gap-8">
